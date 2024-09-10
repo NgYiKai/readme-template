@@ -47,7 +47,8 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#getting-started-with-docker">Getting Started with Docker</li>
+        <li><a href="#getting-started-without-docker">Getting Started without Docker</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -100,8 +101,32 @@ This is an example of how to list things you need to use the software and how to
   ```sh
   npm install npm@latest -g
   ```
+* Docker(Optional)
+  
+If you prefer using Docker, ensure Docker is installed and running on your machine. You can download it from Docker's official website.
 
-### Installation
+### Getting Started with Docker
+
+1. Get a free API Key at [https://example.com](https://example.com)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/github_username/repo_name.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Enter your API in `config.js`
+   ```js
+   const API_KEY = 'ENTER YOUR API';
+   ```
+5. Change git remote url to avoid accidental pushes to base project
+   ```sh
+   git remote set-url origin github_username/repo_name
+   git remote -v # confirm the changes
+   ```
+
+### Getting Started without Docker
 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
